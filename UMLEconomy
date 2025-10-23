@@ -1,0 +1,34 @@
+public class UMLEconomyClass extends umlperson{
+    public double arrivalTime;
+    public int carriageAmt;
+
+        public UMLEconomyClass() {
+        super();
+        arrivalTime = 06.00;
+        carriageAmt = 6;
+    }
+        public UMLEconomyClass(String name, int age, char gender, int num, int amt, double price, double arrivalTime, int carriageAmt) {
+        super(name, age, gender, num, amt, price);   
+        this.arrivalTime = arrivalTime;
+        this.carriageAmt = carriageAmt;
+    }
+     public double getarrivalTime() {
+        return arrivalTime;
+    }
+     public void setarrivalTime(double arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+    public int gecarriageAmt() {
+        return carriageAmt;
+    }
+      public void setticketAmt(int carriageAmt) {
+        this.carriageAmt = carriageAmt;
+    }
+
+     public void displayPassanger(){
+        super.display();
+        System.out.println("Arrival Time: "+arrivalTime);
+        System.out.println("Carriage Amt: "+carriageAmt);
+    
+    }
+}
